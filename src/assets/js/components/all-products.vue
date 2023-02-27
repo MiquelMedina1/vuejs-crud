@@ -8,20 +8,29 @@
             <input type="text" name="search" v-model="productSearch" placeholder="Search products" class="form-control" v-on:keyup="searchProducts">
         </div>
 
+        <div>
+            <button @click="ordenarCrypto">{{ sortDirection }}</button>
+        </div>
+
+        <!--<h1>holaaa</h1>-->
+
         <table class="table table-hover">
             <thead>
-            <tr>
-                <td>ID</td>
-                <td>Name</td>
-                <td>Price</td>
-                <td>Actions</td>
-            </tr>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                </tr>
             </thead>
 
             <tbody>
-                <tr v-for="product in products">
-                    <td>{{ product.id }}</td>
-                    <td>{{ product.name }}</td>
+                <tr v-for="product in products" :key="product.id">
+                    <td>
+                        <img :src="`/src/assets/img/${product.description}.png`" style="width: 30px; weight: 30px">
+                        {{ product.name }}
+                    </td>   
+                    <td>{{ product.description }}</td>
                     <td>{{ product.price }}</td>
                     <td>
                         <router-link :to="{name: 'edit_product', params: { id: product.id }}" class="btn btn-primary">Edit</router-link>
@@ -40,7 +49,8 @@
             return{
                 products: [],
                 originalProducts: [],
-                productSearch: ''
+                productSearch: '',
+                sortDirection: 'Asc'
             }
         },
 
@@ -50,6 +60,17 @@
         },
 
         methods: {
+            ordenarCrypto: function()
+            {
+                if (this.sortDirection === 'Asc') {
+                    this.products.sort((a, b) => (a.price > b.price) ? 1 : -1)
+                    this.sortDirection = 'Desc'
+                }else {
+                    this.products.sort((a, b) => (a.price < b.price) ? 1 : -1)
+                    this.sortDirection = 'Asc'
+                }
+            },
+
             fetchProductData: function()
             {
                 this.$http.get('http://localhost:3000/api/products').then((response) => {

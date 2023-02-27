@@ -1,27 +1,12 @@
 [
     {
-        "id": 1,
-        "name": "Fire TV Stick",
-        "price": "32.99"
+        "name": "Bitcoin",
+        "description": "Btc",
+        "price": "22214.40"
     },
     {
-        "id": 2,
-        "name": "Amazon Echo Dot",
-        "price": "49.99"
-    },
-    {
-        "id": 3,
-        "name": "Amazon Echo, Black",
-        "price": "149.99"
-    },
-    {
-        "id": 4,
-        "name": "Fire Tablet, 7",
-        "price": "47.49"
-    },
-    {
-        "id": 5,
-        "name": "Kindle Paperwhitefff",
-        "price": "104.99"
+        "name": "Ethereum",
+        "description": "Eth",
+        "price": "1548.85"
     }
 ]
