@@ -9,34 +9,39 @@
         </div>
 
         <div>
-            <button @click="ordenarCrypto">{{ sortDirection }}</button>
+            <button class ="btn btn-info" @click="ordenarCrypto">{{ sortDirection }}</button>
         </div>
 
-        <!--<h1>holaaa</h1>-->
-
         <table class="table table-hover">
-            <thead>
+            <!--<thead>
                 <tr>
                     <th>Name</th>
-                    <th>Description</th>
+                    <th>Abbreviation</th>
+                    <th>Description</th>   
                     <th>Price</th>
-                    <th>Actions</th>
                 </tr>
-            </thead>
+            </thead>-->
 
             <tbody>
-                <tr v-for="product in products" :key="product.id">
-                    <td>
-                        <img :src="`/src/assets/img/${product.description}.png`" style="width: 30px; weight: 30px">
-                        {{ product.name }}
-                    </td>   
-                    <td>{{ product.description }}</td>
-                    <td>{{ product.price }}</td>
-                    <td>
-                        <router-link :to="{name: 'edit_product', params: { id: product.id }}" class="btn btn-primary">Edit</router-link>
-                        <router-link :to="{name: 'delete_product', params: { id: product.id }}" class="btn btn-danger">Delete</router-link>
+                <tr v-for="(product, products) in products" :key="products">
+                    <td v-for="(column, columnindex) in 3" :key="columnindex">
+                        <div class="product">
+                            <img :src="`/src/assets/img/${product.abbreviation}.png`" style="width: 30px; weight: 30px"/>
+                            <span>{{ product.name }}</span>
+                        </div>
                     </td>
                 </tr>
+                
+                
+                <!--<tr v-for="product in products" :key="product.id">
+                    <td>
+                        <img :src="`/src/assets/img/${product.abbreviation}.png`" style="width: 30px; weight: 30px">
+                        {{ product.name }}
+                    </td>   
+                    <td>{{ product.abbreviation }}</td>
+                    <td>{{ product.description }}</td>
+                    <td>{{ product.price }}</td>
+                </tr>-->
             </tbody>
         </table>
     </div>
@@ -50,7 +55,9 @@
                 products: [],
                 originalProducts: [],
                 productSearch: '',
-                sortDirection: 'Asc'
+                sortDirection: 'Asc 🡡',
+                rows: 3,
+                columns: 3
             }
         },
 
@@ -62,12 +69,12 @@
         methods: {
             ordenarCrypto: function()
             {
-                if (this.sortDirection === 'Asc') {
+                if (this.sortDirection === 'Asc 🡡') {
                     this.products.sort((a, b) => (a.price > b.price) ? 1 : -1)
-                    this.sortDirection = 'Desc'
+                    this.sortDirection = 'Desc 🡣'
                 }else {
                     this.products.sort((a, b) => (a.price < b.price) ? 1 : -1)
-                    this.sortDirection = 'Asc'
+                    this.sortDirection = 'Asc 🡡'
                 }
             },
 

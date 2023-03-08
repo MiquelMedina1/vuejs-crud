@@ -1,12 +1,26 @@
 [
     {
         "name": "Bitcoin",
-        "description": "Btc",
+        "abbreviation": "Btc",
+        "description": "Moneda kjshdfkjdahf",
         "price": "22214.40"
     },
     {
         "name": "Ethereum",
-        "description": "Eth",
+        "abbreviation": "Eth",
+        "description": "Moneda KJASHFLKJADS",
         "price": "1548.85"
+    },
+    {
+        "name": "Cardano",
+        "abbreviation": "Ada",
+        "description": "Moneda KJASHFLKJADS",
+        "price": "0.3353"
+    },
+    {
+        "name": "Dogecoin",
+        "abbreviation": "Doge",
+        "description": "Moneda KJASHFLKJADS",
+        "price": "0.070"
     }
 ]
