@@ -2,25 +2,29 @@
     {
         "name": "Bitcoin",
         "abbreviation": "Btc",
-        "description": "Moneda kjshdfkjdahf",
-        "price": "22214.40"
+        "description": "BTC és el símbol o acrònim de Bitcoin, una criptomoneda digital descentralitzada basada en tecnologia blockchain.",
+        "lastQuote": "26.100,41",
+        "timeLastQuote": "1 abr, 18:45 UTC"
     },
     {
         "name": "Ethereum",
         "abbreviation": "Eth",
-        "description": "Moneda KJASHFLKJADS",
-        "price": "1548.85"
+        "description": "Ethereum és una plataforma de contractes intel·ligents i criptomonedes que permet als desenvolupadors construir i executar aplicacions descentralitzades..",
+        "lastQuote": "1.669,21",
+        "timeLastQuote": "1 abr, 18:50 UTC"
     },
     {
         "name": "Cardano",
         "abbreviation": "Ada",
-        "description": "Moneda KJASHFLKJADS",
-        "price": "0.3353"
+        "description": "ADA és una criptomoneda descentralitzada que utilitza tecnologia blockchain per permetre transaccions segures i privades en la xarxa Cardano.",
+        "lastQuote": "0,36",
+        "timeLastQuote": "1 abr, 18:50 UTC"
     },
     {
         "name": "Dogecoin",
         "abbreviation": "Doge",
-        "description": "Moneda KJASHFLKJADS",
-        "price": "0.070"
+        "description": "Doge és una criptomoneda basada en el popular meme de 'Doge' que té com a objectiu ser una moneda digital divertida i amigable.",
+        "lastQuote": "0,074",
+        "timeLastQuote": "1 abr, 18:49 UTC"
     }
 ]
