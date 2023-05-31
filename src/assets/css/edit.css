@@ -1,37 +1,38 @@
   .crypto-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 20px;
     position: relative;
+    margin-top: 100px;
   }
-  
+
   .crypto {
     background-color: #fff;
     padding: 20px;
     border: 1px solid #ccc;
     text-align: center;
   }
-  
+
   .crypto-image {
     width: 30%;
     height: auto;
     margin-bottom: 10px;
   }
-  
+
   .crypto-name {
     font-weight: bold;
     font-size: 30px;
     margin-bottom: 5px;
     margin-left: 5px;
   }
-  
+
   .crypto-abbreviation {
     font-weight: bold;
     font-size: 20px;
     margin-bottom: 5px;
     color: #1b7cd6;
   }
-  
+
   .crypto-description {
     font-size: 14px;
     margin-bottom: 5px;
@@ -74,52 +75,92 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 9999;
   }
   
   .cart-content {
-    background-color: #fff;
+    background-color: white;
     padding: 20px;
-    max-width: 400px;
-    border-radius: 4px;
+    border-radius: 5px;
+    max-width: 600px;
+    width: 100%;
+    margin-top: 50px
   }
   
-  .cart-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+  
+  .cart-content h2 {
+    margin-top: 0;
   }
   
   .cart-item-image {
     width: 50px;
     height: 50px;
-    margin-right: 10px;
+    object-fit: cover;
   }
   
-  .cart-item-details {
-    flex-grow: 1;
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
   }
   
-  .cart-item-name {
-    font-weight: bold;
+  th,
+  td {
+    padding: 10px;
+    text-align: left;
   }
   
-  .cart-item-price {
-    color: #888;
+  th {
+    background-color: #f0f0f0;
   }
   
   .cart-total {
-    margin-top: 20px;
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+    font-weight: bold;
   }
   
   .cart-total-label {
-    font-weight: bold;
+    margin-right: 5px;
   }
   
   .cart-total-price {
-    font-weight: bold;
-    color: #f00;
+    font-size: 1.2em;
+  }
+  
+  .btn {
+    margin-right: 10px;
   }
   
 
-  
+  .header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Color de fondo opaco blanco */
+    z-index: 999;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+  }
+
+  @media only screen and (min-width: 768px) {
+    .crypto-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .crypto-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+  }

@@ -1,30 +1,51 @@
 [
     {
         "name": "Bitcoin",
-        "abbreviation": "Btc",
+        "abbreviation": "BTC",
         "description": "BTC és el símbol o acrònim de Bitcoin, una criptomoneda digital descentralitzada basada en tecnologia blockchain.",
         "lastQuote": "26100.41",
         "timeLastQuote": "1 abr, 18:45 UTC"
     },
     {
         "name": "Ethereum",
-        "abbreviation": "Eth",
+        "abbreviation": "ETH",
         "description": "Ethereum és una plataforma de contractes intel·ligents i criptomonedes que permet als desenvolupadors construir i executar aplicacions descentralitzades..",
         "lastQuote": "1669.21",
         "timeLastQuote": "1 abr, 18:50 UTC"
     },
     {
         "name": "Cardano",
-        "abbreviation": "Ada",
+        "abbreviation": "ADA",
         "description": "ADA és una criptomoneda descentralitzada que utilitza tecnologia blockchain per permetre transaccions segures i privades en la xarxa Cardano.",
         "lastQuote": "0.36",
         "timeLastQuote": "1 abr, 18:50 UTC"
     },
     {
         "name": "Dogecoin",
-        "abbreviation": "Doge",
+        "abbreviation": "DOGE",
         "description": "Doge és una criptomoneda basada en el popular meme de 'Doge' que té com a objectiu ser una moneda digital divertida i amigable.",
         "lastQuote": "0.074",
+        "timeLastQuote": "1 abr, 18:49 UTC"
+    },
+    {
+        "name": "Tether",
+        "abbreviation": "USDT",
+        "description": "S'utilitza per mantenir una connexió estable entre dos dispositius. Es pot proporcionar accés a Internet en llocs on no hi ha una connexió Wi-Fi disponible",
+        "lastQuote": "0.94",
+        "timeLastQuote": "1 abr, 18:49 UTC"
+    },
+    {
+        "name": "Litecoin",
+        "abbreviation": "LTC",
+        "description": "Litecoin és utilitzat com una criptomoneda alternativa al Bitcoin. S'utilitza per a transaccions en línia de manera ràpida i segura.",
+        "lastQuote": "83.85",
+        "timeLastQuote": "1 abr, 18:49 UTC"
+    },
+    {
+        "name": "Binance",
+        "abbreviation": "BNB",
+        "description": "És la criptomoneda nativa de la plataforma d'intercanvi de criptomonedes Binance. S'utilitza per pagar les comissions de les transaccions i té diverses utilitats dins de l'ecosistema de Binance.",
+        "lastQuote": "287.79",
         "timeLastQuote": "1 abr, 18:49 UTC"
     }
 ]
